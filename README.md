@@ -18,6 +18,7 @@ L_S_02_2 纹理Tilling（缩放度）和 Offset（偏移度）
 L_S_03 内部函数学习
 L_S_03_1 Clip的实际应用
 L_S_03_2 smoothstep的优化
+L_S_04 Shader的渲染排序
 
 ### R资源
 R_G_00 md文件编写教程

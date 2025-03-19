@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MyShader_L_S_13_d
-  m_Shader: {fileID: 4800000, guid: 48fe88121ee06754492ad0639e2a3df8, type: 3}
+  m_Name: MyShader_L_S_14
+  m_Shader: {fileID: 4800000, guid: 80c8b879a692e5546a5617702e00861d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,12 +23,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _DistortTex:
-        m_Texture: {fileID: 2800000, guid: b07758053534fe647b269f56cc615eba, type: 3}
+    - _MainTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Distort: {r: 0.45, g: -0.23, b: 0.1, a: 0.46}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

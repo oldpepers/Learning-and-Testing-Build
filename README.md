@@ -26,7 +26,8 @@ L_S_08 Shader的遮罩
 L_S_09 Shader的UV扭曲效果  
 L_S_10 Shader的变体shader_feature  
 L_S_11 Shader的屏幕坐标  
-L_S_12 Unity中Shader的屏幕抓取 GrabPass
+L_S_12 Unity中Shader的屏幕抓取 GrabPass  
+L_S_13 Shader抓取屏幕并实现扭曲效果
 ### R资源
 R_G_00 md文件编写教程
 

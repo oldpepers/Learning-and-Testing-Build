@@ -83,3 +83,11 @@ L_S_13_c
 
 在顶点着色器：o.screenUV = ComputeScreenPos(o.pos);  
 在片元着色器：fixed4 grabTex = tex2Dproj(_GrabTex,i.screenUV);
+## 一个最简化的思路
+在之前写的shader中，用于对屏幕坐标取样的pos是在顶点着色器中完成计算的，然而还有一种更为简洁的方法，就是用顶点着色器中传给片元着色器的pos来给屏幕抓取进行采样
+原理：在顶点着色器中，o.pos是裁剪坐标，若不对其做出处理直接传到片元着色器中，则在片元着色器中，传入的i.pos就是屏幕坐标。
+
+    //使用传入片元着色器的 pos 来计算得到，用于给抓取的屏幕采样的变量
+    fixed2 screenUV = i.pos.xy / _ScreenParams.xy;
+代码实现：
+L_S_13_e

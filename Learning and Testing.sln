@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taecg.shaderReference.Editor", "taecg.shaderReference.Editor.csproj", "{a564da3f-0129-9944-1d58-0c4e8b805264}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{831297db-93a8-f0ef-0932-6cb26ae48d8a}"
 EndProject
 Global
@@ -8,6 +10,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{a564da3f-0129-9944-1d58-0c4e8b805264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a564da3f-0129-9944-1d58-0c4e8b805264}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{831297db-93a8-f0ef-0932-6cb26ae48d8a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{831297db-93a8-f0ef-0932-6cb26ae48d8a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection

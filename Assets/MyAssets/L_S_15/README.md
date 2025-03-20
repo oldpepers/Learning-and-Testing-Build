@@ -62,3 +62,39 @@ L_S_15_b
 ## Shader 一样根据UI层级自动适配Shader中模板测试值
 代码案例：
 L_S_15_c
+## Shader中UI材质去色功能实现
+一、实现思路
+1、在属性面板暴露一个 开关 来控制去色变体  
+2、声明一个变体  
+3、在片元着色器实现去色  
+
+    去色的方案
+    1、只输出结果的单通道值，一般来说结果不太理想，比较节省性能
+    2、使用去色公式 dot(rgb,fixed3(0.22,0.707,0.071))
+    3、使用Unity封装的函数，内部使用向量的点积实现了第二步的去色 Luminance(float rgb)
+
+二、实现
+1、定义开关
+
+    [Toggle]_GrayEnabled(“Gray Enabled”,int) = 0
+
+2、声明变体
+
+    //声明一个变体用于控制UI去色,因为需要由程序动态修改，所以使用变体 multi_compile
+    //宏的定义规则，_开关名大写_ON
+    #pragma multi_compile _ _GRAYENABLED_ON
+
+3、在片元着色器中，使用宏判断是否去色
+法1、只输出结果的单通道值，一般来说结果不太理想，比较节省性能
+
+    col.rgb = col.r;
+    col.rgb = col.g;
+    col.rgb = col.b;
+法2、使用去色公式 dot(rgb,fixed3(0.22,0.707,0.071))
+
+    col.rgb = col.r * 0.22 + col.g * 0.707 + col.b * 0.071;
+法3、利用内置官方函数去色 Luminance(float rgb)
+
+    col.rgb = Luminance(col);
+
+代码实现：L_S_15_d

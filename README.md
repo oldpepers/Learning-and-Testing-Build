@@ -31,6 +31,7 @@ L_S_13 Shader抓取屏幕并实现扭曲效果
 L_S_14 Shader特性PerRendererData  
 L_S_15 ui Shader相关操作  
 L_S_16 Unity中Shader的模板测试
+L_S_17 Shader遮罩RectMask2D
 
 ### R资源
 R_G_00 md文件编写教程

@@ -139,6 +139,7 @@ StencilBufferValue：模板缓冲区中的值
 
     Stencil
     {
+
     Ref [_Ref]
     //以下两个属性一般不做修改
     ReadMask 3//[_StencilReadMask]

@@ -154,3 +154,60 @@ b = ( x , y , z ) b = (x,y,z) b=(x,y,z)
     a = ( x , y ) a = (x,y) a=(x,y)
     k = 2 k = 2 k=2
     k ⋅ a = 2 ⋅ ( x , y ) = ( 2 x , 2 y ) k·a = 2·(x,y) =(2x,2y) k⋅a=2⋅(x,y)=(2x,2y)
+# Shader用到的向量的乘积
+一、向量的乘法  
+1、点积  
+2、差积  
+二、点积（结果是一个标量）  
+1、数学表示法
+
+    a ⃗ = ( 1 , 2 ) \vec {a} = (1,2) a =(1,2)
+    b ⃗ = ( 3 , 2 ) \vec{b} = (3,2) b =(3,2)
+a ⃗ ⋅ b ⃗ = ( x a , y b ) ⋅ ( x b , y b ) = x a ∗ x b + y a ∗ y b = 1 ∗ 3 + 2 ∗ 2 = 7 \vec{a}· \vec{b} = (x_a,y_b) · (x_b,y_b) = x_a*x_b +y_a*y_b = 1*3 + 2*2 = 7 a
+⋅b
+
+    =(xa​,yb​)⋅(xb​,yb​)=xa​∗xb​+ya​∗yb​=1∗3+2∗2=7
+
+2、几何表示法
+
+    a ⃗ ⋅ b ⃗ = ∣ m ∣ ∗ ∣ b ⃗ ∣ \vec{a}·\vec{b} = \lvert m \rvert * \lvert \vec{b} \rvert a
+
+⋅b
+=∣m∣∗∣b
+∣
+∣ m ∣ \lvert m \rvert ∣m∣ 为 a ⃗ \vec{a} a
+在 b ⃗ \vec{b} b
+上的投影长度
+c o s ( θ ) = 邻边 斜边 cos(θ) = \frac{邻边}{斜边} cos(θ)=斜边邻边​
+邻边 = c o s ( θ ) ∗ 斜边 邻边 = cos(θ) * 斜边 邻边=cos(θ)∗斜边
+∣ m ∣ = c o s ( θ ) ∗ ∣ a ⃗ ∣ \lvert m \rvert = cos(θ)*\lvert \vec{a} \rvert ∣m∣=cos(θ)∗∣a
+∣
+a ⃗ ⋅ b ⃗ = ∣ a ⃗ ∣ ∗ ∣ b ⃗ ∣ ∗ c o s ( θ ) \vec{a}·\vec{b} = \lvert \vec{a} \rvert * \lvert \vec{b} \rvert*cos(θ) a
+⋅b
+=∣a
+∣∗∣b
+
+    ∣∗cos(θ)
+
+    一句话概述：两向量的点积 = 一个向量在另一个向量上的投影值 * 另一个向量的模长
+
+    注意：向量的点积主要用于光照模型中
+
+三、叉积
+
+    a ⃗ × b ⃗ = ∣ a ⃗ ∣ ∣ b ⃗ ∣ s i n ( θ ) n ⃗ \vec{a} \times \vec{b} = \lvert\vec{a} \rvert \lvert\vec{b} \rvert sin(θ)\vec{n} a
+
+×b
+=∣a
+∣∣b
+∣sin(θ)n
+n ⃗ \vec{n} n
+是与 a ⃗ \vec{a} a
+b ⃗ \vec{b} b
+
+    垂直的单位向量
+
+1、向量叉积的结果 与 两个相乘的向量互相垂直
+2、判断结果正负方向的方法：右手法则
+
+    食指指第一个向量，中指指第二个向量，大拇指就是结果向量的方向

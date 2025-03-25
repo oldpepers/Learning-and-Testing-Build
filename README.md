@@ -36,7 +36,9 @@ L_S_16 Unity中Shader的模板测试
 L_S_17 Shader遮罩RectMask2D  
 L_S_18 Shader光强与环境色Lambert光照的实现  
 L_S_19 Shader光强与环境色  
-L_S_20 Shader的光照衰减
+L_S_20 Shader的光照衰减  
+L_S_21 Shader光照模型Phong
+
 ### R资源
 R_G_00 md文件编写教程
 

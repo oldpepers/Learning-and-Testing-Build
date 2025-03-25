@@ -38,7 +38,8 @@ Shader "MyShader/L_S_13_e"
 
             //在使用抓取的屏幕前，需要像使用属性一样定义一下,_GrabTexture这个名字是Unity定义好的
             sampler2D _GrabTex;
-            sampler2D _DistortTex;float4 _DistortTex_ST;
+            sampler2D _DistortTex;
+            float4 _DistortTex_ST;
             float4 _Distort;
 
             

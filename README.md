@@ -38,8 +38,8 @@ L_S_18 Shader光强与环境色Lambert光照的实现
 L_S_19 Shader光强与环境色  
 L_S_20 Shader的光照衰减  
 L_S_21 Shader光照模型Phong  
-L_S_22 Shader的深度缓冲区
-
+L_S_22 Shader的深度缓冲区  
+L_S_23 Shader的XRay透视效果
 ### R资源
 R_G_00 md文件编写教程
 
